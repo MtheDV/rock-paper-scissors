@@ -4,7 +4,7 @@
   "description": "Api to allow React to talk to PostgreSQL server",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "author": "Mathew de Vin",
   "license": "ISC",

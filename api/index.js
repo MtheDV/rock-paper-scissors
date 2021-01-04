@@ -16,7 +16,6 @@ app.get("/", ((req, res) => {
     merchant_model.getMerchants()
         .then(response => {
             res.status(200).send(response);
-            console.log(response);
         })
         .catch(error => {
             res.status(500).send(error);
@@ -34,7 +33,7 @@ app.post("/merchants", ((req, res) => {
 }));
 
 app.delete("/merchants/:id", ((req, res) => {
-    merchant_model.deleteMerchant(req.params.id)
+    merchant_model.deleteMerchant(parseInt(req.params.id))
         .then(response => {
             res.status(200).send(response);
         })

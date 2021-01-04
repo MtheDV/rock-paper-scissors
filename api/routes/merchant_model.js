@@ -26,8 +26,7 @@ const createMerchant = (body) => {
 }
 const deleteMerchant = (id) => {
     return new Promise(function (resolve, reject) {
-        const id = parseInt(id);
-        db.query("DELETE FROM merchants WHERE id = $1", [id], (error) => {
+        db.query("DELETE FROM merchants WHERE id = $1", [id,], (error) => {
             if (error) {
                 reject(error);
             } else {
