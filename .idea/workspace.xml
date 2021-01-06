@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Added .gitignore to main project structure.">
-      <change afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_paper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_paper.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_rock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_rock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_scissors.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hand_scissors.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/hands.afdesign" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/LogIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/NavItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Implementation of design and beginning of development.">
+      <change afterPath="$PROJECT_DIR$/client/public/DynamicBackground.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/design.afdesign" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PlayHand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/SelectHand.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/merchant_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dynamic-js-background/DynamicBackground.js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -72,8 +57,9 @@
       <recent name="D:\GitHub\rock-paper-scissors\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\rock-paper-scissors\client\src\assets" />
+      <recent name="D:\GitHub\rock-paper-scissors\client\public" />
       <recent name="D:\GitHub\rock-paper-scissors\client\src\components" />
+      <recent name="D:\GitHub\rock-paper-scissors\client\src\assets" />
       <recent name="D:\GitHub\rock-paper-scissors" />
       <recent name="D:\GitHub\rock-paper-scissors\api" />
     </key>
@@ -87,7 +73,11 @@
       <option name="presentableId" value="Default" />
       <updated>1609460680444</updated>
       <workItem from="1609460681651" duration="25211000" />
-      <workItem from="1609727586701" duration="2355000" />
+      <workItem from="1609727586701" duration="24357000" />
+      <workItem from="1609874758273" duration="3000" />
+      <workItem from="1609874899318" duration="3000" />
+      <workItem from="1609874960354" duration="2391000" />
+      <workItem from="1609885750003" duration="6866000" />
     </task>
     <task id="LOCAL-00001" summary="Change Project Structure. Added API.">
       <created>1609631191654</created>
@@ -103,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609631337654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Addition of graphics and features are starting to be implemented.">
+      <created>1609742443877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609742443877</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +122,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Change Project Structure. Added API." />
     <MESSAGE value="Added .gitignore to main project structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore to main project structure." />
+    <MESSAGE value="Addition of graphics and features are starting to be implemented." />
+    <MESSAGE value="Implementation of design and beginning of development." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of design and beginning of development." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
