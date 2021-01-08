@@ -1,61 +1,11 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 
-import Navbar from "./components/Navbar";
-import NavItem from "./components/NavItem";
-import Button from "./components/Button";
 import SelectHand from "./components/SelectHand";
 import PlayHand from "./components/PlayHand";
+import Score from "./components/Score";
 
 function App() {
-    const [merchants, setMerchants] = useState(false);
-    useEffect(() => {
-        getMerchant();
-    }, []);
-
-    function getMerchant() {
-        fetch("http://localhost:3001")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                setMerchants(data);
-            });
-    }
-
-    function createMerchant() {
-        let name = prompt("Enter merchant name");
-        let email = prompt("Enter merchant email");
-        fetch("http://localhost:3001/merchants", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({name, email}),
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                getMerchant();
-            });
-    }
-
-    function deleteMerchant() {
-        let id = prompt("Enter merchant id");
-        fetch(`http://localhost:3001/merchants/${id}`, {
-            method: "DELETE",
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                getMerchant();
-            })
-    }
-
     /*
         0 -> Choose Hand
         1 -> Play Hand
@@ -68,12 +18,40 @@ function App() {
      */
     const [handState, setHandState] = useState(0);
     const [enemyHandState, setEnemyHandState] = useState(0);
+    const [score, setScore] = useState(0);
+    const [enemyScore, setEnemyScore] = useState(0);
+
+    const [timer, setTimer] = useState(-1.0);
+    useEffect(() => {
+        const countDown = setTimeout(() => {
+            checkTimer();
+        }, 500);
+
+        return () => clearTimeout(countDown);
+    });
+
+    function checkTimer() {
+        // update timer then check if it's -1, which is the value to go back
+        // will only change page state once
+        setTimer(timer - 0.5);
+        if (timer <= 0)
+            setPageState(0);
+        console.log("timer:", timer);
+    }
 
     function selectHandClick(e, id) {
         e.preventDefault();
-        setHandState(id);
-        setPageState(1);
-        setEnemyHandState(generateEnemyHand());
+
+        let hand = id;
+        let enemyHand = generateEnemyHand();
+        let winner = compareScores(hand, enemyHand);
+        updateScores(winner)
+            .then(() => {
+                setHandState(hand);
+                setEnemyHandState(enemyHand);
+                setPageState(1);
+                setTimer(1.0); // set the timer time (time - 0.5, to account for initial time delay) (minimum half second)
+            });
     }
 
     function generateEnemyHand() {
@@ -81,34 +59,32 @@ function App() {
         return Math.floor(Math.random() * 3);
     }
 
+    // (state1 - state2 + 5) % 3 === 0 user win
+    // (state1 - state2 + 5) % 3 === 1 enemy win
+    function compareScores(state1, state2) {
+        return (state1 - state2 + 5) % 3;
+    }
+    async function updateScores(winner) {
+        // increase score for winner
+        if (winner === 0)
+            setScore(score + 1);
+        else if (winner === 1)
+            setEnemyScore(enemyScore + 1);
+    }
+
     return (
         <div className="App">
-            {pageState === 0 ?
-                <SelectHand onClick={selectHandClick}/>
-                :
-                pageState === 1 ?
-                    <PlayHand handId={handState} enemyHandId={enemyHandState}/>
+            <h1 className="love">made with 💖 by Mathew de Vin</h1>
+            <Score score={score} enemyScore={enemyScore}/>
+            {
+                pageState === 0 ?
+                    <SelectHand onClick={selectHandClick}/>
                     :
-                    null
+                    pageState === 1 ?
+                        <PlayHand handId={handState} enemyHandId={enemyHandState}/>
+                    :
+                        <SelectHand onClick={selectHandClick}/> // fallback
             }
-            {/*<div className={"grid"}>*/}
-            {/*    /!*<div className={"nav_background"}/>*!/*/}
-            {/*    /!*<Navbar>*!/*/}
-            {/*    /!*    <NavItem href="#">Login</NavItem>*!/*/}
-            {/*    /!*</Navbar>*!/*/}
-            {/*    /!*<div>*!/*/}
-            {/*    /!*    <Button onClick={""}>Test</Button>*!/*/}
-            {/*    /!*    <Button onClick={""} className="bg-green">Good</Button>*!/*/}
-            {/*    /!*    <Button onClick={""} className="bg-red">Bad</Button>*!/*/}
-            {/*    /!*</div>*!/*/}
-            {/*    /!*<div className={"test"}>*!/*/}
-            {/*    /!*    {merchants ? merchants : "There is not enough data available"}*!/*/}
-            {/*    /!*    <br/>*!/*/}
-            {/*    /!*    <button onClick={createMerchant}>Add merchant</button>*!/*/}
-            {/*    /!*    <br/>*!/*/}
-            {/*    /!*    <button onClick={deleteMerchant}>Delete merchant</button>*!/*/}
-            {/*    /!*</div>*!/*/}
-            {/*</div>*/}
         </div>
     );
 }
