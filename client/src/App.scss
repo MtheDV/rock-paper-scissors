@@ -5,15 +5,10 @@ $hand_size: 7rem;
 
 @mixin transform($property) {
   -webkit-transform: $property;
-  -moz-transform: $property;
-  -o-transform: $property;
-  -ms-transform: $property;
-  transform: $property;
+      -ms-transform: $property;
+          transform: $property;
 }
 @mixin transition($property) {
-  -webkit-transition: $property;
-  -moz-transition: $property;
-  -o-transition: $property;
   transition: $property;
 }
 
@@ -33,9 +28,7 @@ $hand_size: 7rem;
 }
 @mixin animate($property) {
   -webkit-animation: $property;
-  -moz-animation: $property;
-  -o-animation: $property;
-  animation: $property;
+          animation: $property;
 }
 @include keyframes(shake_fist) {
   0%, 100% { @include transform(rotate(0deg)) }
@@ -55,7 +48,7 @@ $hand_size: 7rem;
   }
 }
 @mixin play_fist_top_animate {
-  @include animate(play_fist_top 1s 1);
+  @include animate(play_fist_top 0.75s 1);
 }
 @include keyframes(play_fist_bottom) {
   0% {
@@ -68,7 +61,7 @@ $hand_size: 7rem;
   }
 }
 @mixin play_fist_bottom_animate {
-  @include animate(play_fist_bottom 1s 1);
+  @include animate(play_fist_bottom 0.75s 1);
 }
 @include keyframes(opacity_zero) {
   0% { opacity: 0 }
@@ -77,6 +70,51 @@ $hand_size: 7rem;
 @mixin opacity_zero_animate {
   @include animate(opacity_zero 0.5s 1);
 }
+@include keyframes(opacity_full) {
+  0% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@mixin opacity_full_animate {
+  @include animate(opacity_full 0.6s 1);
+}
+@include keyframes(hand_rock_paper_win) {
+  0%, 30% { @include transform(translate(0, 0)) }
+  60%, 80% { @include transform(translate(20vw, -100%)) }
+  70% { @include transform(translate(20vw, -50%)) }
+  100% { @include transform(translate(0, 0)) }
+}
+@mixin hand_rock_paper_win_animate {
+  @include animate(hand_rock_paper_win 2s 1);
+}
+@include keyframes(hand_scissors_win) {
+  0%, 30% { @include transform(translate(0, 0)) }
+  60% { @include transform(translate(0, -5vw)) }
+  75% { @include transform(translate(40vw, 0) rotate(10deg)) }
+  100% { @include transform(translate(0, 0)) }
+}
+@mixin hand_scissors_win_animate {
+  @include animate(hand_scissors_win 2s 1);
+}
+@include keyframes(hand_rock_paper_enemy_win) {
+  0%, 30% { @include transform(translate(0, 0)) }
+  60%, 80% { @include transform(translate(-20vw, -100%)) }
+  70% { @include transform(translate(-20vw, -50%)) }
+  100% { @include transform(translate(0, 0)) }
+}
+@mixin hand_rock_paper_enemy_win_animate {
+  @include animate(hand_rock_paper_enemy_win 2s 1);
+}
+@include keyframes(hand_scissors_enemy_win) {
+  0%, 30% { @include transform(translate(0, 0)) }
+  60% { @include transform(translate(0, -5vw)) }
+  75% { @include transform(translate(-40vw, 0) rotate(-10deg)) }
+  100% { @include transform(translate(0, 0)) }
+}
+@mixin hand_scissors_enemy_win_animate {
+  @include animate(hand_scissors_enemy_win 2s 1);
+}
+
 
 %flex_kit {
   display: flex;
@@ -147,7 +185,6 @@ html {
 
 .logo_main {
   @extend %flex_kit;
-  @include opacity_zero_animate;
 
   img {
     cursor: pointer;
@@ -159,6 +196,12 @@ html {
     margin-left: 3%;
   }
 }
+.logo_main_no_opacity {
+  @include opacity_zero_animate;
+}
+.logo_main_opacity {
+  @include opacity_full_animate;
+}
 
 .play_hand {
   @extend %flex_kit;
@@ -167,12 +210,24 @@ html {
     margin-left: 5%;
     margin-right: 5%;
   }
-  .hand_left {
-    @include play_fist_top_animate;
-  }
-  .hand_right {
-    @include play_fist_bottom_animate;
-  }
+}
+.animate_hand_rock {
+  @include hand_rock_paper_win_animate;
+}
+.animate_hand_paper {
+  @include hand_rock_paper_win_animate;
+}
+.animate_hand_scissors {
+  @include hand_scissors_win_animate;
+}
+.animate_hand_rock_enemy {
+  @include hand_rock_paper_enemy_win_animate;
+}
+.animate_hand_paper_enemy {
+  @include hand_rock_paper_enemy_win_animate;
+}
+.animate_hand_scissors_enemy {
+  @include hand_scissors_enemy_win_animate;
 }
 
 .score {

@@ -15,9 +15,9 @@ const Hand = (props) => {
 class PlayHand extends Component {
     render() {
         return (
-            <div className="flex_container">
+            <div className={"flex_container " + this.props.className}>
                 <div className="play_hand">
-                    <div className="hand_left">
+                    <div className={"hand_left " + this.props.userClass}>
                     {
                         this.props.handId === 0 ?
                             <Hand type="rock" flip={true} src={handRock}/>
@@ -28,7 +28,7 @@ class PlayHand extends Component {
                                 <Hand type="scissors" flip={true} src={handScissors}/>
                     }
                     </div>
-                    <div className="hand_right">
+                    <div className={"hand_right " + this.props.enemyClass}>
                     {
                         this.props.enemyHandId === 0 ?
                             <Hand type="rock" flip={false} src={handRock}/>

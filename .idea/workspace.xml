@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Implementation of design and beginning of development.">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Score.js" afterDir="false" />
+    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Major features implemented alongside animation design. Close to completion.">
+      <change afterPath="$PROJECT_DIR$/client/public/favicon_rps.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/logo512.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/db/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/merchant_model.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/DynamicBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/DynamicBackground.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/design.afdesign" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/design.afdesign" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/hands.afdesign" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hands.afdesign" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/PlayHand.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PlayHand.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SelectHand.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectHand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +71,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dynamic-js-background/DynamicBackground.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\rock-paper-scissors\client\public" />
       <recent name="D:\GitHub\rock-paper-scissors\api" />
       <recent name="D:\GitHub\rock-paper-scissors\client" />
     </key>
@@ -85,7 +103,22 @@
       <workItem from="1609874758273" duration="3000" />
       <workItem from="1609874899318" duration="3000" />
       <workItem from="1609874960354" duration="2391000" />
-      <workItem from="1609885750003" duration="38411000" />
+      <workItem from="1609885750003" duration="39117000" />
+      <workItem from="1610227792764" duration="264000" />
+      <workItem from="1610228152864" duration="1340000" />
+      <workItem from="1610230142223" duration="206000" />
+      <workItem from="1610231130457" duration="853000" />
+      <workItem from="1610232052306" duration="775000" />
+      <workItem from="1610240860744" duration="1092000" />
+      <workItem from="1610255521020" duration="144000" />
+      <workItem from="1610257250798" duration="695000" />
+      <workItem from="1610261903535" duration="27000" />
+      <workItem from="1610264499939" duration="616000" />
+      <workItem from="1610275350880" duration="664000" />
+      <workItem from="1610296289758" duration="1394000" />
+      <workItem from="1610576714381" duration="9943000" />
+      <workItem from="1610610475160" duration="2507000" />
+      <workItem from="1610661001042" duration="6213000" />
     </task>
     <task id="LOCAL-00001" summary="Change Project Structure. Added API.">
       <created>1609631191654</created>
@@ -115,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609903471997</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Major features implemented alongside animation design. Close to completion.">
+      <created>1610095300418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610095300418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +179,8 @@
     <MESSAGE value="Added .gitignore to main project structure." />
     <MESSAGE value="Addition of graphics and features are starting to be implemented." />
     <MESSAGE value="Implementation of design and beginning of development." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of design and beginning of development." />
+    <MESSAGE value="Major features implemented alongside animation design. Close to completion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Major features implemented alongside animation design. Close to completion." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
