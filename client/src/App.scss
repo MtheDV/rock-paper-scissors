@@ -85,7 +85,7 @@ $hand_size: 7rem;
   100% { @include transform(translate(0, 0)) }
 }
 @mixin hand_rock_paper_win_animate {
-  @include animate(hand_rock_paper_win 2s 1);
+  @include animate(hand_rock_paper_win 1.5s 1);
 }
 @include keyframes(hand_scissors_win) {
   0%, 30% { @include transform(translate(0, 0)) }
@@ -94,7 +94,7 @@ $hand_size: 7rem;
   100% { @include transform(translate(0, 0)) }
 }
 @mixin hand_scissors_win_animate {
-  @include animate(hand_scissors_win 2s 1);
+  @include animate(hand_scissors_win 1.5s 1);
 }
 @include keyframes(hand_rock_paper_enemy_win) {
   0%, 30% { @include transform(translate(0, 0)) }
@@ -103,7 +103,7 @@ $hand_size: 7rem;
   100% { @include transform(translate(0, 0)) }
 }
 @mixin hand_rock_paper_enemy_win_animate {
-  @include animate(hand_rock_paper_enemy_win 2s 1);
+  @include animate(hand_rock_paper_enemy_win 1.5s 1);
 }
 @include keyframes(hand_scissors_enemy_win) {
   0%, 30% { @include transform(translate(0, 0)) }
@@ -112,7 +112,7 @@ $hand_size: 7rem;
   100% { @include transform(translate(0, 0)) }
 }
 @mixin hand_scissors_enemy_win_animate {
-  @include animate(hand_scissors_enemy_win 2s 1);
+  @include animate(hand_scissors_enemy_win 1.5s 1);
 }
 
 

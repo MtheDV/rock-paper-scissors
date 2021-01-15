@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Major features implemented alongside animation design. Close to completion.">
-      <change afterPath="$PROJECT_DIR$/client/public/favicon_rps.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo512.png" afterDir="false" />
+    <list default="true" id="41c13539-51b4-4581-886a-ee720f7c913d" name="Default Changelist" comment="Animated hands during play phase.">
+      <change afterPath="$PROJECT_DIR$/client/.netlify/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/db/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/merchant_model.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/DynamicBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/DynamicBackground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/.sass-cache/98693fcc53d955c36ff02ba83a7105c3248a77ae/App.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/hands.afdesign" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hands.afdesign" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PlayHand.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PlayHand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SelectHand.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectHand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -118,7 +101,7 @@
       <workItem from="1610296289758" duration="1394000" />
       <workItem from="1610576714381" duration="9943000" />
       <workItem from="1610610475160" duration="2507000" />
-      <workItem from="1610661001042" duration="6213000" />
+      <workItem from="1610661001042" duration="9276000" />
     </task>
     <task id="LOCAL-00001" summary="Change Project Structure. Added API.">
       <created>1609631191654</created>
@@ -155,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610095300418</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Animated hands during play phase.">
+      <created>1610667361554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610667361555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +170,8 @@
     <MESSAGE value="Addition of graphics and features are starting to be implemented." />
     <MESSAGE value="Implementation of design and beginning of development." />
     <MESSAGE value="Major features implemented alongside animation design. Close to completion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Major features implemented alongside animation design. Close to completion." />
+    <MESSAGE value="Animated hands during play phase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Animated hands during play phase." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

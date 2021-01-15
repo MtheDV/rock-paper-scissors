@@ -536,28 +536,28 @@ html {
   margin-right: 5%; }
 
 .animate_hand_rock {
-  -webkit-animation: hand_rock_paper_win 2s 1;
-  animation: hand_rock_paper_win 2s 1; }
+  -webkit-animation: hand_rock_paper_win 1.5s 1;
+  animation: hand_rock_paper_win 1.5s 1; }
 
 .animate_hand_paper {
-  -webkit-animation: hand_rock_paper_win 2s 1;
-  animation: hand_rock_paper_win 2s 1; }
+  -webkit-animation: hand_rock_paper_win 1.5s 1;
+  animation: hand_rock_paper_win 1.5s 1; }
 
 .animate_hand_scissors {
-  -webkit-animation: hand_scissors_win 2s 1;
-  animation: hand_scissors_win 2s 1; }
+  -webkit-animation: hand_scissors_win 1.5s 1;
+  animation: hand_scissors_win 1.5s 1; }
 
 .animate_hand_rock_enemy {
-  -webkit-animation: hand_rock_paper_enemy_win 2s 1;
-  animation: hand_rock_paper_enemy_win 2s 1; }
+  -webkit-animation: hand_rock_paper_enemy_win 1.5s 1;
+  animation: hand_rock_paper_enemy_win 1.5s 1; }
 
 .animate_hand_paper_enemy {
-  -webkit-animation: hand_rock_paper_enemy_win 2s 1;
-  animation: hand_rock_paper_enemy_win 2s 1; }
+  -webkit-animation: hand_rock_paper_enemy_win 1.5s 1;
+  animation: hand_rock_paper_enemy_win 1.5s 1; }
 
 .animate_hand_scissors_enemy {
-  -webkit-animation: hand_scissors_enemy_win 2s 1;
-  animation: hand_scissors_enemy_win 2s 1; }
+  -webkit-animation: hand_scissors_enemy_win 1.5s 1;
+  animation: hand_scissors_enemy_win 1.5s 1; }
 
 .score {
   color: white;

@@ -87,9 +87,9 @@ function App() {
             setEnemyHandState(enemyHand);
             setPageState(1);
             if (winner === 0 || winner === 1)
-                setTimer(2.0); // set the timer time (time - 0.5, to account for initial time delay) (minimum half second)
+                setTimer(1.5); // set the timer time (time - 0.5, to account for initial time delay) (minimum half second)
             else
-                setTimer(1.0);
+                setTimer(0.5);
             setHandVisible(true);
         }, 500);
     }
